@@ -57,7 +57,7 @@ function find_page() {
 
                 var term_term = term_terms_array[j];
 
-                result = scoreSearchTerm(term_term, search_value)/j;
+                result = scoreSearchTerm(term_term, search_value);
 
                 if (term_term != "" && term_term != " " && term_term != "/" ) {
 
@@ -107,6 +107,8 @@ function find_page() {
 
         }
 
+        console.log(search_results, score_results);
+
         //direct user to number 1 search result, if there are none, send to 404?search=term
 
         if (search_results.length > 0) {
@@ -136,7 +138,7 @@ function scoreSearchTerm(str1, str2) {
         str2 = str2.split("#")[1];
     }
 
-    var result = calculateScore(str1, str2);
+    var result = 0;
     if (str1.includes(str2)) {
         result += 0.35 * str2.length;
     }
@@ -183,6 +185,21 @@ function scoreSearchTerm(str1, str2) {
             result += 0.35 * word.length;
         }
     }
+
+    for (var i = 0; i < str1_words.length; i++) {
+        word = str1_words[i];
+        if (word.includes(str2) || str2.includes(word)) {
+            result += 0.6 * word.length;
+        }
+    }
+
+    for (var i = 0; i < str2_words.length; i++) {
+        word = str2_words[i];
+        if (word.includes(str1) || str1.includes(word)) {
+            result += 0.6 * word.length;
+        }
+    }
+
 
     return result;
 

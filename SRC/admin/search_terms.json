@@ -20,7 +20,7 @@
     "Contact Us": {
         "name": "Contact Us",
         "slug": "/contact",
-        "terms": ["contact", "us", "contact us", "get in touch", "phone number", "email address", "address", "pricing", "cost", "money"]
+        "terms": ["contact", "us", "contact us", "get in touch", "phone number", "email address", "address", "pricing", "cost", "money", "talk"]
     },
 
     "Gallery": {
