@@ -1,0 +1,116 @@
+.showcase-container {
+    .showcase {
+        .showcase-text {
+            text-align: center;
+            width: 60%;
+            padding: 20px;
+            margin: auto;
+
+        }
+
+        .showcase-features {
+            display: grid;
+            width: 80%;
+            margin: 10vh auto;
+            .showcase-feature {
+                display: grid;
+                grid-template-rows: 0.1fr 1.7fr 0.5fr;
+                background-color: white;
+                border-radius: 10px;
+                width: 90%;
+                padding: 10px;
+                .showcase-feature-image {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .showcase-feature-text {
+
+                    text-align: center;
+
+                    h3 {
+                        color: black;
+                    }
+
+                    p {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .showcase-container {
+        .showcase {
+            height: 90vh;
+            padding-top: 10vh;
+
+            .showcase-features {
+
+                .showcase-feature {
+                    
+                    .showcase-feature-text {
+                        h3 {
+                            font-size: 1.5em;
+                        }
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .showcase-container {
+        .showcase {
+            height: auto;
+
+            .showcase-features {
+                display: block;
+                padding-bottom: 40px;
+                width: 50%;
+                margin: 2vh auto 0 auto;
+
+                .showcase-feature {
+                    margin: 10px;
+                    
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .showcase-container {
+        .showcase {
+            height: auto;
+
+            .showcase-text {
+                width: 75%;
+            }
+
+            .showcase-features {
+                display: block;
+                padding-bottom: 40px;
+                width: 75%;
+                margin: 2vh auto 0 auto;
+
+                .showcase-feature {
+                    margin: 10px;
+                    
+                }
+
+            }
+        }
+    }
+}

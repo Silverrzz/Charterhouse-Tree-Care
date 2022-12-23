@@ -1,0 +1,52 @@
+<config>
+    text,
+    icons,
+    links,
+    widget_id,
+    class
+</config>
+
+<div class="widget-container" id="widget-{{ WIDGET_ID }}">
+    <div class="footer-container">
+        <div class="footer">
+            <h3 class="footer-text"></h3>
+            <div class="footer-links"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var text = "{{ TEXT }}";
+    var icons = "{{ ICONS }}";
+    var links = "{{ LINKS }}";
+    var classes = "{{ CLASS }}";
+
+    var scope = document.querySelector("#widget-{{ WIDGET_ID }}");
+
+    var footer = scope.querySelector(".footer-container");
+    var footer_text = scope.querySelector(".footer-text");
+    var footer_links = scope.querySelector(".footer-links");
+
+    if (text) {
+        footer_text.innerHTML = text;
+    }
+
+    if (icons && links) {
+        var icons_array = icons.split("||");
+        var links_array = links.split("||");
+
+        for (var i = 0; i < icons_array.length; i++) {
+            var link = document.createElement("a");
+            link.href = links_array[i];
+            link.target = "_blank";
+            link.innerHTML = `<i class="fa fa-${icons_array[i]}"></i>`;
+            footer_links.appendChild(link);
+        }
+    }
+
+    if (classes) {
+        footer.classList.add(classes);
+    }
+
+</script>

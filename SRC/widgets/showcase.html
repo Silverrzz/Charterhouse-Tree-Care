@@ -1,0 +1,95 @@
+<config>
+
+    image_url,
+    title,
+    subtitle,
+    feature_titles,
+    feature_images,
+    feature_descriptions,
+    feature_buttons,
+    feature_links,
+    widget_id,
+    class
+
+</config>
+
+<div class="widget-container" id="widget-{{ WIDGET_ID }}">
+    <div class="showcase-container background-image">
+        <div class="showcase content-huge">
+            <div class="showcase-text">
+                <h1 id="title"></h1>
+                <h4 id="subtitle"></h4>
+            </div>
+            <div class="showcase-features"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var image_url = "{{ IMAGE_URL }}";
+    var title = "{{ TITLE }}";
+    var subtitle = "{{ SUBTITLE }}";
+    var feature_titles = "{{ FEATURE_TITLES }}";
+    var feature_images = "{{ FEATURE_IMAGES }}";
+    var feature_descriptions = "{{ FEATURE_DESCRIPTIONS }}";
+    var feature_buttons = "{{ FEATURE_BUTTONS }}";
+    var feature_links = "{{ FEATURE_LINKS }}";
+    var classes = "{{ CLASS }}";
+
+    var scope = document.querySelector("#widget-{{ WIDGET_ID }}");
+
+    var showcase = scope.querySelector(".showcase-container");
+    var showcase_text = scope.querySelector(".showcase-text");
+    var showcase_features = scope.querySelector(".showcase-features");
+
+    if (image_url) {
+        showcase.style.backgroundImage = `url(${image_url})`;
+    }
+
+    if (title) {
+        showcase_text.querySelector("#title").innerHTML = title;
+    }
+
+    if (subtitle) {
+        showcase_text.querySelector("#subtitle").innerHTML = subtitle;
+    }
+
+    if (feature_titles && feature_images && feature_descriptions && feature_buttons && feature_links) {
+        var feature_titles_array = feature_titles.split("||");
+        var feature_images_array = feature_images.split("||");
+        var feature_descriptions_array = feature_descriptions.split("||");
+        var feature_buttons_array = feature_buttons.split("||");
+        var feature_links_array = feature_links.split("||");
+
+        // Set grid-template-columns
+        showcase_features.style.gridTemplateColumns = `repeat(${feature_titles_array.length}, 1fr)`;
+
+        for (let i = 0; i < feature_titles_array.length; i++) {
+            var feature = document.createElement("div");
+            feature.classList.add("showcase-feature");
+            feature.innerHTML = `
+                <div class="showcase-feature-text">
+                    <h3>${feature_titles_array[i]}</h3>
+                    <p>${feature_descriptions_array[i]}</p>
+                </div>
+                <div class="showcase-feature-image">
+                    <img src="${feature_images_array[i]}" alt="${feature_titles_array[i]}">
+                </div>
+                <a href="${feature_links_array[i]}" class="btn">${feature_buttons_array[i]}</a>
+            `;
+            showcase_features.appendChild(feature);
+        }
+    }
+
+    if (classes) {
+        var class_list = classes.split(" ");
+
+        for (let i = 0; i < class_list.length; i++) {
+            showcase.classList.add(class_list[i]);
+        }
+    }
+
+
+
+</script>

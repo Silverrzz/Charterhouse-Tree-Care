@@ -1,0 +1,42 @@
+$color-primary: #000077;
+$color-secondary: #ffff00;
+$color-tertiary: #99ccdd;
+$color-quaternary: #77aabb;
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 15px 30px;
+    border-bottom: white 2px solid;
+
+    &:hover {
+        border-bottom: $color-primary 2px solid;
+    }
+
+    &.btn {
+        text-align: center;
+        display: block;
+        font-weight: 700;
+        background-color: $color-quaternary;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 5px;
+        transition: all 0.2s ease-in-out;
+        color: black;
+        border-bottom: $color-quaternary 2px solid;
+        margin: 10px;
+
+        &:hover {
+            background-color: $color-primary;
+            color: white;
+            border-bottom: $color-primary 2px solid;
+        }
+    }
+
+    &.invisible-link {
+        border: none;
+    }
+}

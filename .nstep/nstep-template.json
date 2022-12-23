@@ -1,0 +1,151 @@
+{
+    "STEPS": [
+        "SRC",
+        "DEV",
+        "MAIN"
+    ],
+    "SOURCE_STEP": "SRC",
+    "GIT": {
+        "enabled": "false",
+        "branch": "master",
+        "remote": "origin",
+        "repository": "git@github.com:Silverrzz/Charterhouse-Tree-Care.git"
+    },
+    "SRC": {
+        "STRUC": [
+            {
+                "SRC": {
+                    "STRUC": [
+                        {
+                            "scss": {
+                                "STRUC": []
+                            }
+                        },
+                        {
+                            "assets": {
+                                "STRUC": []
+                            }
+                        },
+                        {
+                            "javascript": {
+                                "STRUC": []
+                            }
+                        },
+                        {
+                            "widgets": {
+                                "STRUC": []
+                            }
+                        },
+                        {
+                            "admin": {
+                                "STRUC": [
+                                    {
+                                        "templates": {
+                                            "STRUC": []
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "pages": {
+                                "STRUC": []
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "BUILD": "false",
+        "VOLATILE": "false",
+        "WATCH": "run release-run DEV"
+    },
+    "DEV": {
+        "STRUC": [
+            {
+                "DEV": {
+                    "STRUC": [
+                        {
+                            "public": {
+                                "STRUC": [
+                                    {
+                                        "js": {
+                                            "STRUC": []
+                                        }
+                                    },
+                                    {
+                                        "assets": {
+                                            "STRUC": []
+                                        }
+                                    },
+                                    {
+                                        "pages": {
+                                            "STRUC": []
+                                        }
+                                    },
+                                    {
+                                        "css": {
+                                            "STRUC": []
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "admin": {
+                                "STRUC": []
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "BUILD": "true",
+        "VOLATILE": "true",
+        "WATCH": "false"
+    },
+    "MAIN": {
+        "STRUC": [
+            {
+                "MAIN": {
+                    "STRUC": [
+                        {
+                            "public": {
+                                "STRUC": [
+                                    {
+                                        "js": {
+                                            "STRUC": []
+                                        }
+                                    },
+                                    {
+                                        "assets": {
+                                            "STRUC": []
+                                        }
+                                    },
+                                    {
+                                        "pages": {
+                                            "STRUC": []
+                                        }
+                                    },
+                                    {
+                                        "css": {
+                                            "STRUC": []
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "admin": {
+                                "STRUC": []
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "BUILD": "true",
+        "VOLATILE": "true",
+        "WATCH": "false"
+    }
+}

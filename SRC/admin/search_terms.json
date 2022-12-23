@@ -1,0 +1,25 @@
+{
+    "Stump Grinding": {
+        "name": "Stump Grinding",
+        "slug": "/services#stump-grinding",
+        "terms": ["stump grinding", "service", "jobs", "stumps", "grinding"]
+    },
+
+    "Tree Surgery": {
+        "name": "Tree Surgery",
+        "slug": "/services#tree-surgery",
+        "terms": ["tree surgery", "service", "jobs", "trees", "surgery", "felling", "tree felling"]
+    },
+
+    "Site Clearance": {
+        "name": "Site Clearance",
+        "slug": "/services#site-clearance",
+        "terms": ["site clearance", "service", "jobs", "clearance", "site"]
+    },
+
+    "Contact Us": {
+        "name": "Contact Us",
+        "slug": "/contact",
+        "terms": ["contact", "us", "contact us", "get in touch", "phone number", "email address", "address"]
+    }
+}
