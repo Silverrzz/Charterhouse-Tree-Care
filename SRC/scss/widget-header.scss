@@ -1,0 +1,128 @@
+$color-primary: #000077;
+$color-secondary: #ffff00;
+$color-tertiary: #99ccdd;
+$color-quaternary: #77aabb;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 3fr 5fr 3fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    z-index: 5;
+
+    .header-item {
+        padding: 10px;
+
+        &.page-title {
+            text-align: center;
+            margin: 5px auto;
+            padding: 15px;
+            width: fit-content;
+
+            h1 {
+                font-size: 2em;
+                font-family: 'Open Sans', sans-serif;
+                line-height: 30px;
+                letter-spacing: 2px;
+                color: black;
+                text-transform: uppercase;
+                margin: 10px;
+                font-weight: bold;
+            }
+
+            h4 {
+                font-size: 1em;
+                color: gray;
+                font-weight: 100;
+                line-height: 15px;
+                margin: 10px;
+                font-weight: 600;
+                letter-spacing: 0.7px;
+                font-family: 'Open Sans', sans-serif;
+                
+            }
+        }
+
+        &.nav-links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0px 20px;
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .header {
+        .header-item {
+            &.nav-links {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        align-items: center;
+        .header-item {
+
+            &.page-title {
+
+                h1 {
+                    font-size: 1.4em;
+                }
+
+                h4 {
+                    font-size: 0.8em;
+                    
+                }
+            }
+
+            &.nav-links {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        .header-item {
+
+            &.logo {
+                display: none;
+            }
+
+            &.page-title {
+
+                h1 {
+                    font-size: 1.4em;
+                    line-height: 20px;
+                }
+
+                h4 {
+                    font-size: 0.8em;
+                    line-height: 10px;
+                    
+                }
+            }
+
+            &.nav-links {
+                display: none;
+            }
+        }
+    }
+}

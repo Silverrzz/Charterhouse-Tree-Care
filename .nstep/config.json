@@ -1,0 +1,14 @@
+{
+    "DEV": {
+        "host": "http://localhost:3000/",
+        "protocol": "http",
+        "domain": "localhost",
+        "port": 3000
+    },
+    "A": {
+        "host": "http://localhost:3001/",
+        "protocol": "http",
+        "domain": "localhost",
+        "port": 3001
+    }
+}

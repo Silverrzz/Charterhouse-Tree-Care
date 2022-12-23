@@ -1,0 +1,14 @@
+{
+  "name": "charterhousetreecare",
+  "version": "1.0.0",
+  "description": "Website for Charterhouse Tree Care",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Lewis Fulterer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

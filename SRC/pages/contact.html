@@ -1,0 +1,58 @@
+<div style="background-image: url(!HOST!/assets/background.jpg);padding-bottom:10vh;" class="background-image">
+<widget name="header" widget_id="5" title="Charterhouse Tree Care" subtitle="We provide a complete range of arboriculture work and tree surgery services in Surrey and Hampshire." nav_items="About||Services" nav_links="/about||/services" buttons="Home" links="/" image_url="!HOST!/assets/logo.jpg"  ></widget>
+    <div class="form-wrapper">
+        <h1>Get In Touch</h1>
+        <form action="/contact" method="POST">
+            <div class="form-group">
+                <div class="form-input input-inline">
+                    <label for="first-name">First Name *</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="">
+                </div>
+                <div class="form-input input-inline">
+                    <label for="last-name">Last Names *</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-input">
+                    <label for="email">Email Address *</label>
+                    <input type="email" name="email" id="email" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-input">
+                    <label for="category">How can we help you? *</label>
+                    <select name="category" id="category">
+                        <option value="general-enquiry">General Enquiry</option>
+                        <option value="sales-query">Sales Query</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-input">
+                    <label for="postcode">Site Postcode</label>
+                    <input type="text" name="postcode" id="postcode" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-input">
+                    <label for="subject">Subject *</label>
+                    <input type="text" name="subject" id="subject" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-input">
+                    <label for="description">Description *</label>
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="form-input">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

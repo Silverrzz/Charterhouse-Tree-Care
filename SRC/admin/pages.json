@@ -1,0 +1,77 @@
+{
+    "index": {
+        "id": "index",
+        "name": "Home",
+        "slug": "/home",
+        "routes": ["", "/", "/index", "/home"],
+        "template": "default",
+        "stylesheet": "../css/style.css",
+        "private": false,
+        "meta": {
+            "title": "Charterhouse Tree Care - Home",
+            "description": "Charterhouse Tree Care - Home",
+            "keywords": "Charterhouse Tree Care - Home"
+        }
+    },
+
+    "contact": {
+        "id": "contact",
+        "name": "Contact Us",
+        "slug": "/contact",
+        "routes": ["/contact", "/contact-us"],
+        "template": "default",
+        "stylesheet": "../css/style.css",
+        "private": false,
+        "meta": {
+            "title": "Charterhouse Tree Care - Contact Us",
+            "description": "Charterhouse Tree Care - Contact Us",
+            "keywords": "Charterhouse Tree Care - Contact Us"
+        }
+    },
+
+    "services": {
+        "id": "services",
+        "name": "Services",
+        "slug": "/services",
+        "routes": ["/services", "/what-we-do"],
+        "template": "default",
+        "stylesheet": "../css/style.css",
+        "private": false,
+        "meta": {
+            "title": "Charterhouse Tree Care - Services",
+            "description": "Charterhouse Tree Care - Services",
+            "keywords": "Charterhouse Tree Care - Services"
+        }
+    },
+
+    "info": {
+        "id": "info",
+        "name": "Info",
+        "slug": "/info",
+        "routes": ["/info", "/information", "/about", "/about-us"],
+        "template": "default",
+        "stylesheet": "../css/style.css",
+        "private": false,
+        "meta": {
+            "title": "Charterhouse Tree Care - Info",
+            "description": "Charterhouse Tree Care - Info",
+            "keywords": "Charterhouse Tree Care - Info"
+        }
+    },
+
+    "404": {
+        "id": "404",
+        "name": "Page Not Found",
+        "slug": "/404",
+        "routes": ["/404", "/not-found"],
+        "template": "default",
+        "stylesheet": "../css/style.css",
+        "private": false,
+        "meta": {
+            "title": "Charterhouse Tree Care - Page Not Found",
+            "description": "Charterhouse Tree Care - Page Not Found",
+            "keywords": "Charterhouse Tree Care - Page Not Found"
+        }
+    }
+    
+}
