@@ -1,6 +1,5 @@
-.old/
-DEV/
-MAIN/
+.nstep/*
+DEV/*
 
 
 
