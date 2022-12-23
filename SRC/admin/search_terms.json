@@ -20,6 +20,12 @@
     "Contact Us": {
         "name": "Contact Us",
         "slug": "/contact",
-        "terms": ["contact", "us", "contact us", "get in touch", "phone number", "email address", "address"]
+        "terms": ["contact", "us", "contact us", "get in touch", "phone number", "email address", "address", "pricing", "cost", "money"]
+    },
+
+    "Gallery": {
+        "name": "Gallery",
+        "slug": "/home#gallery",
+        "terms": ["gallery", "photos", "pictures", "images", "photo", "picture", "image", "recent jobs", "recent work", "recent projects", "recent"]
     }
 }
