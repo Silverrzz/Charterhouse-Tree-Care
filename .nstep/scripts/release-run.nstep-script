@@ -1,4 +1,0 @@
-RUN{1-DESTINATION}:
-CMD >> taskkill /f /im node.exe,
-CMD >> nstep release $DESTINATION,
-CMD >> python .nstep/scripts/run_step_async.py $DESTINATION;
