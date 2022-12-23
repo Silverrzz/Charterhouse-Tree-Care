@@ -1,4 +1,0 @@
-RUN{1-STEP,2-DESTINATION}:
-COPY >> .nstep/deployment/* >> $DESTINATION/*,
-CMD >> python .nstep/scripts/deploy_server.py $DESTINATION,
-CMD >> cd $STEP && npm install;
