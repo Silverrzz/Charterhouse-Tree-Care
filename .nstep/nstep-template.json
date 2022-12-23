@@ -1,11 +1,11 @@
 {
     "STEPS": [
         "SRC",
-        "DEV"
+        "BUILD"
     ],
     "SOURCE_STEP": "SRC",
     "GIT": {
-        "enabled": "false",
+        "enabled": "true",
         "branch": "master",
         "remote": "origin",
         "repository": "git@github.com:Silverrzz/Charterhouse-Tree-Care.git"
@@ -57,12 +57,12 @@
         ],
         "BUILD": "false",
         "VOLATILE": "false",
-        "WATCH": "run release-run DEV"
+        "WATCH": "run release-run BUILD"
     },
-    "DEV": {
+    "BUILD": {
         "STRUC": [
             {
-                "DEV": {
+                "BUILD": {
                     "STRUC": [
                         {
                             "public": {

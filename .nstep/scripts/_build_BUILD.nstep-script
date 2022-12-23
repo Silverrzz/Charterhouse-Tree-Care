@@ -1,0 +1,8 @@
+RUN{1-SOURCE,2-DESTINATION}:
+CMD >> taskkill /f /im node.exe,
+COPY >> $SOURCE/javascript/* >> $DESTINATION/public/js/*,
+COPY >> $SOURCE/assets/* >> $DESTINATION/public/assets/*,
+COPY >> $SOURCE/admin/pages.json >> $DESTINATION/admin/pages.json,
+CMD >> python .nstep/scripts/create_theme.py $SOURCE/scss,
+CMD >> sass $SOURCE/scss/style.scss $DESTINATION/public/css/style.css,
+CMD >> python .nstep/scripts/build_pages.py $SOURCE/admin/pages.json $DESTINATION/public/pages;

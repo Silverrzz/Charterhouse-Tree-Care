@@ -1,0 +1,8 @@
+{
+    "BUILD": {
+        "host": "http://localhost:3000/",
+        "protocol": "http",
+        "domain": "localhost",
+        "port": 3000
+    }
+}

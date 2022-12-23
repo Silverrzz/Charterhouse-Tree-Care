@@ -1,0 +1,3 @@
+RUN{1-DESTINATION}:
+CMD >> nstep build $DESTINATION,
+CMD >> python .nstep/scripts/run_step_async.py $DESTINATION;
