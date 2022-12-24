@@ -111,7 +111,7 @@ function find_page() {
 
         //direct user to number 1 search result, if there are none, send to 404?search=term
 
-        if (search_results.length > 0) {
+        if (search_results.length > 0 && search_value.length > 2 && score_results[0] > 3) {
 
             var search_result = search_results[0].split(":")[1];
             window.location.href = search_result;
